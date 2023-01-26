@@ -7,7 +7,7 @@ interface Props {
   selecionaTarefa: (tarefaSelecionada: ITarefa) => void;
 }
 
-function Lista({ tarefas } : Props) {
+function Lista({ tarefas, selecionaTarefa } : Props) {
   // const [tarefas, setTarefas] = useState([{   // UseState é um rook, que serve para manipular o estado do component. Ele é uma método do react. Ele precisa que eu passe dois parÂmetros: o proprio estado (no caso, tarefas) e depois uma função com a qual eu vou manipular esse estado (no caso, setTarefa).
   //   tarefa: 'React',
   //   tempo: '02:00:00'
